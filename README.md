@@ -20,3 +20,7 @@ example, the query **carr 16** would give you 16 carrots.
 
 This mod is not yet ready for use, but if you really want to try it, you can close the repository and build it yourself.
 You can run the command `./gradlew runClient` to build the mod and test it in-game.
+
+If you're feeling bold, you can download the latest nightly build
+[here](https://nightly.link/BogTheMudWing/Blip/workflows/build/main/Artifacts.zip). **This is the active development
+version, not a stable release.**
