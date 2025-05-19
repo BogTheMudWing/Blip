@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "blip",
+	"version": "${version}",
+	"name": "Blip",
+	"description": "Instantly get the item you need.",
+	"authors": [
+		"BogTheMudWing"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/blip/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"org.macver.blip.Blip"
+		],
+		"client": [
+			"org.macver.blip.BlipClient"
+		]
+	},
+	"mixins": [
+		"blip.mixins.json",
+		{
+			"config": "blip.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.4",
+		"java": ">=21",
+		"fabric-api": "*",
+		"fabric-key-binding-api-v1": "*"
+  	}
+}
