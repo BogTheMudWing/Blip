@@ -1,4 +1,7 @@
 {
   "category.blip.search": "Blip",
-  "key.blip.open": "Open search"
+  "key.blip.open": "Open search",
+  "message.survial_item_not_found": "You don't have that item.",
+  "message.survial_not_enough_items": "You don't have enough of that item.",
+  "message.not_supported": "This feature is not yet supported."
 }

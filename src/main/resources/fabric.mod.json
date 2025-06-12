@@ -22,12 +22,11 @@
 			"org.macver.blip.BlipClient"
 		]
 	},
-
 	"depends": {
 		"fabricloader": ">=0.16.14",
 		"minecraft": "~1.21.4",
 		"java": ">=21",
 		"fabric-api": "*",
-		"fabric-key-binding-api-v1": "*"
+		"fabric-key-binding-api-v1": "*",
   	}
 }
