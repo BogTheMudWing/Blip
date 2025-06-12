@@ -20,14 +20,14 @@ public class BlipClient implements ClientModInitializer {
 		keyBinding = KeyBindingHelper.registerKeyBinding(new KeyBinding(
 				"key.blip.open", // The translation key
 				InputUtil.Type.KEYSYM, // Type of keybinding is keyboard
-				GLFW.GLFW_KEY_C, // The keycode
-				"category.blip.test"
+				GLFW.GLFW_KEY_J, // The keycode
+				"category.blip.search"
 		));
 
 		ClientTickEvents.END_CLIENT_TICK.register(client -> {
 			while (keyBinding.wasPressed()) {
 				MinecraftClient.getInstance().setScreen(
-						new BlipBox(Text.empty())
+						new SearchBox(Text.empty())
 				);
 			}
 		});

@@ -7,7 +7,7 @@ Instantly get the item you need.
 Blip is not yet but may one day become a Fabric mod that allows you to quickly put whatever you want in your hand.
 Here's how it works:
 
-The Blip Box is activated by a configurable keybind (default C), which activates a text box. When you type into the text
+The search is activated by a configurable keybind (default J), which activates a text box. When you type into the text
 box, Blip uses your query to search for items. In Creative mode, this is all available items in the game. In Survival
 mode, only items in your inventory are shown. When you press Enter (or return, on Mac), the top result in placed in your
 hand. You will be given a single item if in Creative mode. If in Survival mode, the largest stack will be moved into
