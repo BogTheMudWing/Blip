@@ -25,6 +25,12 @@ Download the latest release from [GitHub](https://github.com/BogTheMudWing/Blip/
 
 To install the mod, follow this guide: <https://docs.fabricmc.net/players/installing-mods>.
 
+## Uninstallation
+
+Remove `blip-*.jar` from the mods folder.
+
+Blip does not generate or modify any other files.
+
 ## Nightly
 
 If you're feeling bold, you can download the latest nightly build
