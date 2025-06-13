@@ -56,9 +56,9 @@ To build the project from source, simply run the command `./gradlew build`. The 
 There are many ways in which you can contribute:
 
 - For bug reports, please create an issue on the GitHub repository detailing exactly how the error occurred and any
-- relevant crash reports or logs.
+relevant crash reports or logs.
 - For feature requests, please create an issue on the GitHub repository detailing what the feature or enhancement should
-- be and how it would improve the project.
+be and how it would improve the project.
 - For pull requests, please maintain good coding practices and take feedback eagerly.
 - You can also contribute simply by sharing the mod with other people who might like it :)
 
