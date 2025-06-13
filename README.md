@@ -92,3 +92,9 @@ indicate non-backward-compatible changes (as it is supposed to).
 - GitHub, for hosting my code.
 - Apache, for the fuzzy search system FuzzyScore.
 - IntelliJ, for developing a great IDE.
+
+---
+
+[![Blip icon](src/main/resources/assets/blip/icon.png)](src/main/resources/assets/blip/icon.svg)
+
+[Blip Icon](src/main/resources/assets/blip/icon.svg) © 2025 by [BogTheMudWing](https://blog.macver.org/about-me) is licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/).

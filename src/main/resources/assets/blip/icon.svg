@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="16.0px"
+   height="16.0px"
+   viewBox="0 0 16.0 16.0"
+   version="1.1"
+   id="SVGRoot"
+   sodipodi:docname="Blip.svg"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="Blip.png"
+   inkscape:export-xdpi="3072"
+   inkscape:export-ydpi="3072"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <title
+     id="title7503">Blip Icon</title>
+  <sodipodi:namedview
+     id="namedview203"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showgrid="true"
+     inkscape:zoom="68.901366"
+     inkscape:cx="7.3002907"
+     inkscape:cy="8.4396005"
+     inkscape:window-width="2560"
+     inkscape:window-height="1366"
+     inkscape:window-x="3840"
+     inkscape:window-y="720"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid333"
+       empspacing="4" />
+  </sodipodi:namedview>
+  <defs
+     id="defs198">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3582">
+      <stop
+         style="stop-color:#16052f;stop-opacity:1;"
+         offset="0"
+         id="stop3578" />
+      <stop
+         style="stop-color:#480735;stop-opacity:1;"
+         offset="1"
+         id="stop3580" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 1 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="16 : 9 : 1"
+       inkscape:persp3d-origin="8 : 5.3333333 : 1"
+       id="perspective414" />
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3582"
+       id="linearGradient3584"
+       x1="2.4973447"
+       y1="-1.0656101"
+       x2="14.163082"
+       y2="16.657581"
+       gradientUnits="userSpaceOnUse" />
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Drop Shadow"
+       id="filter7249"
+       x="-0.057896736"
+       y="-0.058126114"
+       width="1.1157935"
+       height="1.1162522">
+      <feFlood
+         flood-opacity="1"
+         flood-color="rgb(255,0,229)"
+         result="flood"
+         id="feFlood7239" />
+      <feComposite
+         in="SourceGraphic"
+         in2="flood"
+         operator="in"
+         result="composite1"
+         id="feComposite7241" />
+      <feGaussianBlur
+         in="composite1"
+         stdDeviation="0.4"
+         result="blur"
+         id="feGaussianBlur7243" />
+      <feOffset
+         dx="0"
+         dy="0"
+         result="offset"
+         id="feOffset7245" />
+      <feComposite
+         in="SourceGraphic"
+         in2="offset"
+         operator="over"
+         result="composite2"
+         id="feComposite7247" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter7463"
+       x="-0.006836162"
+       y="-0.016022092"
+       width="1.0136723"
+       height="1.0320442">
+      <feGaussianBlur
+         stdDeviation="0.02 0.05"
+         result="blur"
+         id="feGaussianBlur7461" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB;"
+       inkscape:label="Blur"
+       id="filter7467"
+       x="-0.034180811"
+       y="-0.032044186"
+       width="1.0683616"
+       height="1.0640884">
+      <feGaussianBlur
+         stdDeviation="0.1 0.1"
+         result="blur"
+         id="feGaussianBlur7465" />
+    </filter>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:url(#linearGradient3584);fill-opacity:1;stroke-width:1.0015748;stroke-dasharray:none"
+       id="rect1157"
+       width="16"
+       height="16"
+       x="0"
+       y="0"
+       inkscape:label="Background" />
+    <g
+       id="g7373"
+       inkscape:label="Hotbar">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#c0c0c0;stroke-opacity:1;stroke-width:0.62362205;stroke-dasharray:none"
+         id="rect2310-3"
+         width="10"
+         height="10"
+         x="13"
+         y="3"
+         inkscape:label="Slot R" />
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#c0c0c0;stroke-opacity:1;stroke-width:0.62362205;stroke-dasharray:none"
+         id="rect2310-3-6"
+         width="10"
+         height="10"
+         x="-7"
+         y="3"
+         inkscape:label="Slot L" />
+      <rect
+         style="fill:none;fill-opacity:1;stroke:#ffffff;stroke-opacity:1"
+         id="rect2310"
+         width="10"
+         height="10"
+         x="3"
+         y="3"
+         inkscape:label="Selected Slot" />
+    </g>
+    <path
+       style="mix-blend-mode:normal;fill:#ffa1fd;fill-opacity:0.77693713;stroke:none;stroke-width:1.68499;stroke-opacity:1;opacity:0.80013112;filter:url(#filter7249)"
+       d="m 12.044601,-0.22888874 c 0,0 -1.989942,4.54373584 -1.40974,6.77693104 0.721154,2.7757156 5.630738,6.5051307 5.630738,6.5051307 0,0 -5.231424,-2.610738 -7.8874612,-2.04341 -2.7550122,0.588469 -6.6014445,5.277161 -6.6014445,5.277161 0,0 3.21109,-5.049494 2.7367156,-7.7467431 C 4.0741944,6.042848 -0.31564694,2.6625583 -0.31564694,2.6625583 c 0,0 4.78779104,2.9045793 7.24741984,2.2950082 2.3563414,-0.5839733 5.1128281,-5.18645524 5.1128281,-5.18645524 z"
+       id="path1277"
+       sodipodi:nodetypes="cacacacac"
+       inkscape:label="Blip" />
+    <g
+       id="g6675"
+       style="opacity:1"
+       transform="translate(0.35709022,0.31398201)"
+       inkscape:label="Block">
+      <path
+         style="display:inline;fill:#bdccc3;fill-opacity:0.209394;stroke:none;stroke-width:0.4474;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter7467)"
+         d="M 10.572807,8.2670733 8.0138062,10.888398 4.1129822,9.6400583 3.5513234,6.0200638 6.1103242,3.3987397 10.011148,4.647078 Z"
+         id="path493-5"
+         inkscape:label="Echo 2"
+         transform="matrix(0.639972,0,0,0.639972,1.7507263,2.0231586)" />
+      <path
+         style="display:inline;opacity:1;fill:#bdccc3;fill-opacity:0.365765;stroke:none;stroke-width:0.4474;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter7463)"
+         d="M 10.980961,8.677267 8.4219603,11.298592 4.5211363,10.050252 3.9594775,6.4302575 6.5184783,3.8089334 10.419302,5.0572717 Z"
+         id="path493"
+         inkscape:label="Echo 1"
+         transform="matrix(0.89043639,0,0,0.89043639,0.81846417,0.82761748)" />
+      <path
+         style="display:inline;fill:#bdccc3;fill-opacity:1;stroke:none;stroke-width:0.44;stroke-dasharray:none;stroke-opacity:1"
+         d="M 11.532634,9.1318702 9.0159603,11.709837 5.1796585,10.482145 4.6272899,6.9220277 7.1439632,4.3440621 10.980265,5.571752 Z"
+         id="path493-3"
+         inkscape:label="Base" />
+      <path
+         style="fill:#424f47;fill-opacity:1;stroke:none;stroke-width:0.453543;stroke-dasharray:none;stroke-opacity:1"
+         d="M 10.980265,5.571752 11.532634,9.1318702 9.0159603,11.709837 8.494139,8.0170124 Z"
+         id="path5798"
+         sodipodi:nodetypes="ccccc"
+         inkscape:label="Side 1" />
+      <path
+         style="fill:#7a887f;fill-opacity:1;stroke:none;stroke-width:0.453543;stroke-dasharray:none;stroke-opacity:1"
+         d="M 8.494139,8.0170124 4.6272899,6.9220277 5.1796585,10.482145 9.0159603,11.709837"
+         id="path6646"
+         inkscape:label="Side 2" />
+    </g>
+  </g>
+  <metadata
+     id="metadata7501">
+    <rdf:RDF>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by/4.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Notice" />
+        <cc:requires
+           rdf:resource="http://creativecommons.org/ns#Attribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by/4.0/" />
+        <dc:title>Blip Icon</dc:title>
+        <dc:date>June 13 2025</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>BogTheMudWing</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:description>The icon for the Blip mod.</dc:description>
+        <dc:source>https://github.com/BogTheMudWing/Blip</dc:source>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
