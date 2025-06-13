@@ -70,7 +70,7 @@ public class SearchBox extends Screen {
                 ClientPlayerEntity player = client.player;
 
                 PlayerInventory inventory = player.getInventory();
-                int selectedSlot = ((PlayerInventoryAccessor) inventory).getSelectedSlot();;
+                int selectedSlot = ((PlayerInventoryAccessor) inventory).getSelectedSlot();
 
                 if (!countSpecified) {
                     // If count is not specified, check if the player already has the itemstack
