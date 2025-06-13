@@ -1,6 +1,6 @@
 # Blip
 
-Instantly get the item you need.
+A fast and easy fuzzy-search item grabber.
 
 ![Blip gives you a search box that lets you fuzzy find items](repo/images/Blip%20Preview.png)
 
