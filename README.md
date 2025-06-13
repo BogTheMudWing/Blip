@@ -19,8 +19,8 @@ Click the image below to go to YouTube to watch a video explainging Blip's funct
 Here's how it works:
 
 The search is activated by a configurable keybind (default J), which activates a text box. When you type into the text
-box, Blip uses your query to search for items. When you press Enter (or return, on Mac), the top result is placed in your
-hand. You will be given a single item if in Creative mode. If in Survival mode, the first stack will be moved into
+box, Blip uses your query to search for items. When you press Enter (or return, on Mac), the top result is placed in
+your hand. You will be given a single item if in Creative mode. If in Survival mode, the first stack will be moved into
 your hand, and whatever was in your hand will move to where the selected item stack was.
 
 You may optionally specify a number before or after the query separated by a space to specify the number of items to put
@@ -43,20 +43,47 @@ Blip does not generate or modify any other files.
 
 ## Nightly
 
-If you're feeling bold, you can download the latest nightly build
-[here](https://nightly.link/BogTheMudWing/Blip/workflows/build/main/Artifacts.zip). **This is the active development
-version, not a stable release. It may not work at all.**
+If you're feeling bold, you can download the latest nightly build [here](https://nightly.link/BogTheMudWing/Blip/workflows/build/main/Artifacts.zip). **This is the active development version
+on the main branch, not a stable release. Expect issues. It may not work at all.**
+
+## Development
+
+To build the project from source, simply run the command `./gradlew build`. The completed jar will appear in
+`build/libs/blip-v*.jar`.
 
 ## Contributing
 
 There are many ways in which you can contribute:
 
-- For bug reports, please create an issue on the GitHub repository detailing exactly how the error occurred and any relevant
-crash reports or logs.
-- For feature requests, please create an issue on the GitHub repository detailing what the feature or enhancement should be
-and how it would improve the project.
+- For bug reports, please create an issue on the GitHub repository detailing exactly how the error occurred and any
+- relevant crash reports or logs.
+- For feature requests, please create an issue on the GitHub repository detailing what the feature or enhancement should
+- be and how it would improve the project.
 - For pull requests, please maintain good coding practices and take feedback eagerly.
 - You can also contribute simply by sharing the mod with other people who might like it :)
+
+## Questions and Answers
+
+**Will there be a Forge version?**
+
+Maybe, but I don't have that planned right now. I don't know Forge, but if you do, maybe you could try it!
+
+**What versions of Minecraft does Blip run on?**
+
+I will generally try to support only the latest release of Minecraft. I will not be testing on snapshots and I will
+probably not go out of my way to support older versions of Minecraft. But you won't know until you try!
+
+**Why is it called Blip?**
+
+Blip is a simple name that is easy to say, and I strive to make Blip simple and easy to use. Also, instead of moving
+items from the Creative inventory into your hotbar, they just *blip* into your hand!
+
+**Why is the versioning like that?**
+
+Normal semantic versioning follows the pattern `MAJOR.MINOR.PATCH`, which is useful for developers, but not so much
+users. To differentiate major versions of the software, I have changed the pattern slightly to
+`vEDITION-MAJOR.MINOR.PATCH`. _Edition_ is for big user-facing upgrades so that _major_ can be updated independently to
+indicate non-backward-compatible changes (as it is supposed to).
 
 ## Thanks to
 
@@ -64,3 +91,4 @@ and how it would improve the project.
 - The FabricMC project for creating Minecraft modding frameworks.
 - GitHub, for hosting my code.
 - Apache, for the fuzzy search system FuzzyScore.
+- IntelliJ, for developing a great IDE.
