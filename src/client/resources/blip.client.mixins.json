@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "org.macver.blip.mixin.client",
+  "compatibilityLevel": "JAVA_21",
+  "client": [
+    "PlayerInventoryAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -5,7 +5,6 @@ import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.TextFieldWidget;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.item.AirBlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
@@ -16,6 +15,7 @@ import net.minecraft.util.Formatting;
 import net.minecraft.util.Identifier;
 import org.jetbrains.annotations.NotNull;
 import org.lwjgl.glfw.GLFW;
+import org.macver.blip.mixin.client.PlayerInventoryAccessor;
 
 import java.util.List;
 import java.util.Locale;
@@ -70,7 +70,7 @@ public class SearchBox extends Screen {
                 ClientPlayerEntity player = client.player;
 
                 PlayerInventory inventory = player.getInventory();
-                int selectedSlot = inventory.selectedSlot;
+                int selectedSlot = ((PlayerInventoryAccessor) inventory).getSelectedSlot();;
 
                 if (!countSpecified) {
                     // If count is not specified, check if the player already has the itemstack
@@ -87,13 +87,13 @@ public class SearchBox extends Screen {
                         switchHandToItemStack(slotWithStack, inventory, selectedSlot);
                     } else {
                         // Player does not have itemstack
-                        if (player.isCreative()) giveStack(inventory, selectedSlot, stack);
+                        if (player.getAbilities().creativeMode) giveStack(inventory, selectedSlot, stack);
                         else {
                             player.sendMessage(Text.translatable("message.survial_not_enough_items").getWithStyle(Style.EMPTY.withColor(Formatting.RED)).getFirst(), true);
                         }
                     }
                 } else {
-                    if (player.isCreative()) giveStack(inventory, selectedSlot, stack);
+                    if (player.getAbilities().creativeMode) giveStack(inventory, selectedSlot, stack);
                     else {
 
                         player.sendMessage(Text.translatable("message.not_supported").getWithStyle(Style.EMPTY.withColor(Formatting.RED)).getFirst(), true);
