@@ -8,10 +8,10 @@
 		"BogTheMudWing"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "https://blog.macver.org/about-me",
+		"sources": "https://github.com/BogTheMudWing/Blip"
 	},
-	"license": "CC0-1.0",
+	"license": "MIT",
 	"icon": "assets/blip/icon.png",
 	"environment": "client",
 	"entrypoints": {
@@ -27,6 +27,6 @@
 		"minecraft": "~1.21.4",
 		"java": ">=21",
 		"fabric-api": "*",
-		"fabric-key-binding-api-v1": "*",
+		"fabric-key-binding-api-v1": "*"
   	}
 }

@@ -2,7 +2,6 @@ package org.macver.blip;
 
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
-import org.apache.commons.text.similarity.FuzzyScore;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
