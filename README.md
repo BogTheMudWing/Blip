@@ -2,9 +2,19 @@
 
 Instantly get the item you need.
 
+![Blip gives you a search box that lets you fuzzy find items](repo/images/Blip%20Preview.png)
+
 ## About
 
-Blip is a Fabric mod that allows you to quickly put any item in your hand.
+Blip is a Fabric mod that allows you to quickly put any item in your hand. It is designed to be quick and easy to use.
+
+Click the image below to go to YouTube to watch a video of Blip in action.
+
+[![Blip Demo](https://i.ytimg.com/vi/kvs01urkPoA/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGFsgZSg3MA8=&rs=AOn4CLC1kRDzoviQVTw8SefdISynWkYEug)](https://www.youtube.com/watch?v=kvs01urkPoA)
+
+Click the image below to go to YouTube to watch a video explainging Blip's functionality.
+
+[![Blip Showcase](https://i.ytimg.com/vi/V03D6UsprnQ/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGGUgQShOMA8=&rs=AOn4CLBKl-ZxqYNijPD8tshGWsNGyRKPfQ)](https://www.youtube.com/watch?v=V03D6UsprnQ)
 
 Here's how it works:
 
@@ -47,3 +57,10 @@ crash reports or logs.
 and how it would improve the project.
 - For pull requests, please maintain good coding practices and take feedback eagerly.
 - You can also contribute simply by sharing the mod with other people who might like it :)
+
+## Thanks to
+
+- Mojang for developing an awesome game.
+- The FabricMC project for creating Minecraft modding frameworks.
+- GitHub, for hosting my code.
+- Apache, for the fuzzy search system FuzzyScore.
