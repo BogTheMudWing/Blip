@@ -6,7 +6,7 @@ A fast and easy fuzzy-search item grabber.
 
 ## About
 
-Blip is a Fabric mod that allows you to quickly put any item in your hand. It is designed to be quick and easy to use.
+Blip is a Fabric mod that allows you to quickly put any item in your hand. It is designed to be quick and easy to use and is inspired by the Spotlight system-wide search on macOS and other desktop application launchers.
 
 Click the image below to go to YouTube to watch a video of Blip in action.
 
