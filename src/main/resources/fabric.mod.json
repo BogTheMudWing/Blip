@@ -3,7 +3,7 @@
 	"id": "blip",
 	"version": "${version}",
 	"name": "Blip",
-	"description": "Instantly get the item you need.",
+	"description": "A fast and easy fuzzy-search item grabber.",
 	"authors": [
 		"BogTheMudWing"
 	],
@@ -30,7 +30,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.16.14",
-		"minecraft": "~1.21.4",
+		"minecraft": ">=1.21.2",
 		"java": ">=21",
 		"fabric-api": "*",
 		"fabric-key-binding-api-v1": "*"

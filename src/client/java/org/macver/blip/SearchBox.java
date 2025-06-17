@@ -3,6 +3,7 @@ package org.macver.blip;
 import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.TextFieldWidget;
+import net.minecraft.client.gui.widget.TextWidget;
 import net.minecraft.client.network.ClientPlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.Item;
@@ -293,10 +294,16 @@ public class SearchBox extends Screen {
             try {
                 // Include count if it exists
                 int count = getCount(input);
-                context.drawText(textRenderer, count + " " + item.getName().getString(), x + 20, y + i * 20, 0xFFFFFF, true);
+                TextWidget textWidget = new TextWidget(Text.of(count + " " + item.getName().getString()), textRenderer);
+                textWidget.setPosition(x + 20, y + i * 20);
+                textWidget.render(context, mouseX, mouseY, delta);
+                // addDrawable(textWidget);
             } catch (NoSuchElementException ignored) {
                 // No number at the end, draw normally
-                context.drawText(textRenderer, item.getName(), x + 20, y + i * 20, 0xFFFFFF, true);
+                TextWidget textWidget = new TextWidget(item.getName(), textRenderer);
+                textWidget.setPosition(x + 20, y + i * 20);
+                textWidget.render(context, mouseX, mouseY, delta);
+//                addDrawable(textWidget);
             }
 
         }
