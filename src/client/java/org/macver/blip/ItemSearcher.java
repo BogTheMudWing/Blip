@@ -5,6 +5,7 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import org.jetbrains.annotations.NotNull;
+import org.macver.blip.mixin.client.PlayerInventoryAccessor;
 
 import java.util.*;
 import java.util.stream.Stream;
@@ -19,7 +20,8 @@ public class ItemSearcher {
             items = Registries.ITEM.stream();
         } else {
             // otherwise only show items from inventory
-            items = MinecraftClient.getInstance().player.getInventory().main.stream()
+            PlayerInventoryAccessor inventory = (PlayerInventoryAccessor) MinecraftClient.getInstance().player.getInventory();
+            items = inventory.getMain().stream()
                     .filter(stack -> !stack.isEmpty())
                     .map(ItemStack::getItem)
                     .distinct();
