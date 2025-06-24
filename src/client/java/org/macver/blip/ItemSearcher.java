@@ -1,16 +1,30 @@
 package org.macver.blip;
 
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
 import net.minecraft.registry.Registries;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.*;
+import java.util.stream.Stream;
 
 public class ItemSearcher {
     private static final FuzzyScore fuzzyScore = new FuzzyScore(Locale.ENGLISH);
 
     public List<Item> searchItems(String query) {
-        return Registries.ITEM.stream()
+        Stream<Item> items;
+        // only show all items if in creative
+        if (MinecraftClient.getInstance().player.getAbilities().creativeMode) {
+            items = Registries.ITEM.stream();
+        } else {
+            // otherwise only show items from inventory
+            items = MinecraftClient.getInstance().player.getInventory().main.stream()
+                    .filter(stack -> !stack.isEmpty())
+                    .map(ItemStack::getItem)
+                    .distinct();
+        }
+        return items
                 .map(item -> {
                     String itemName = item.getName().getString();
                     int score = fuzzyScore.fuzzyScore(itemName, query);
