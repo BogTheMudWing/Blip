@@ -29,14 +29,25 @@ public class ItemSearcher {
         return items
                 .map(item -> {
                     String itemName = item.getName().getString();
-                    int score = fuzzyScore.fuzzyScore(itemName, query);
+                    int fuzzy = fuzzyScore.fuzzyScore(itemName, query);
+                    int keyword = keywordScore(itemName, query);
+                    int finalScore = fuzzy + (10 * keyword); // You can tweak this weight
                     int nameLength = itemName.length();
-                    return new ScoredItem(item, score, nameLength);
+                    return new ScoredItem(item, finalScore, nameLength);
                 })
                 .filter(si -> si.score > 0)
                 .sorted()
                 .map(si -> si.item)
                 .toList();
+    }
+
+    // Word-based score: counts matching words regardless of order
+    private int keywordScore(@NotNull String term, @NotNull String query) {
+        Set<String> termWords = new HashSet<>(Arrays.asList(term.toLowerCase().split("\\W+")));
+        Set<String> queryWords = new HashSet<>(Arrays.asList(query.toLowerCase().split("\\W+")));
+
+        termWords.retainAll(queryWords); // intersection of words
+        return termWords.size();
     }
 
     private record ScoredItem(Item item, int score, int length) implements Comparable<ScoredItem> {

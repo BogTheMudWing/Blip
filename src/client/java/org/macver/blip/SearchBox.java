@@ -50,7 +50,7 @@ public class SearchBox extends Screen {
 
     @Override
     public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
-        if (keyCode == GLFW.GLFW_KEY_ENTER) {
+        if (keyCode == GLFW.GLFW_KEY_ENTER || keyCode == GLFW.GLFW_KEY_KP_ENTER) {
             String input = textFieldWidget.getText();
             List<Item> results = searchItems(input);
             if (!results.isEmpty()) {

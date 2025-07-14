@@ -31,29 +31,23 @@ import java.util.Locale;
  * This code has been adapted from Apache Commons Lang 3.3.
  * </p>
  *
+ * @param locale Locale used to change the case of text.
  * @since 1.0
  */
 
-public class FuzzyScore {
-
-    /**
-     * Locale used to change the case of text.
-     */
-    private final Locale locale;
+public record FuzzyScore(Locale locale) {
 
     /**
      * This returns a {@link Locale}-specific {@link FuzzyScore}.
      *
      * @param locale The string matching logic is case insensitive.
-    A {@link Locale} is necessary to normalize both Strings to lower case.
-     * @throws IllegalArgumentException
-     *         This is thrown if the {@link Locale} parameter is {@code null}.
+     *               A {@link Locale} is necessary to normalize both Strings to lower case.
+     * @throws IllegalArgumentException This is thrown if the {@link Locale} parameter is {@code null}.
      */
-    public FuzzyScore(final Locale locale) {
+    public FuzzyScore {
         if (locale == null) {
             throw new IllegalArgumentException("Locale must not be null");
         }
-        this.locale = locale;
     }
 
     /**
@@ -73,9 +67,9 @@ public class FuzzyScore {
      * score.fuzzyScore("Apache Software Foundation", "asf") = 3
      * </pre>
      *
-     * @param term a full term that should be matched against, must not be null
+     * @param term  a full term that should be matched against, must not be null
      * @param query the query that will be matched against a term, must not be
-     *            null
+     *              null
      * @return result score
      * @throws IllegalArgumentException if the term or query is {@code null}
      */
@@ -136,7 +130,8 @@ public class FuzzyScore {
      *
      * @return The locale
      */
-    public Locale getLocale() {
+    @Override
+    public Locale locale() {
         return locale;
     }
 
